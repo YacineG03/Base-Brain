@@ -98,6 +98,8 @@ app.use(cors({
   credentials: true, // Si vous utilisez des cookies ou des sessions
 })); // Ajout du middleware cors
 app.use(passport.initialize());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Configuration de multer
 const storage = multer.diskStorage({
