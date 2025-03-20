@@ -21,7 +21,7 @@ RUN npm install
 # Copier le reste des fichiers du backend
 COPY . .
 
-# Exposer le port utilisé par ton backend (par exemple 3001 comme vu dans tes logs)
+# Exposer le port utilisé par ton backend (3001 d'après tes logs)
 EXPOSE 3001
 
 # Commande pour démarrer l'application

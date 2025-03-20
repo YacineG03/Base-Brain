@@ -595,7 +595,7 @@ function Login() {
                 >
                   <Box
                     component="img"
-                    src="src/components/telechargement.jpg"
+                    src="src/assets/telechargement.jpg"
                     alt="Illustration BaseBrain"
                     sx={{ 
                       width: "100%",

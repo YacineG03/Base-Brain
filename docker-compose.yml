@@ -1,0 +1,19 @@
+services:
+  backend:
+    build:
+      context: ./BaseBrain-Backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - DATABASE_HOST=host.docker.internal
+      - DATABASE_USER=ROOT
+      - DATABASE_PASSWORD=
+      - DATABASE_NAME=basebraindb
+
+  frontend:
+    build:
+      context: ./basebrain-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
